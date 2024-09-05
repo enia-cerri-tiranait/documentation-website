@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Documentation</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <h2>Documentation</h2>
+      <button class="dropdown-btn">HTML Tags</button>
+      <div class="dropdown-container">
+        <a href="#html-a">a</a>
+        <a href="#html-div">div</a>
+      </div>
+
+      <button class="dropdown-btn">CSS Properties</button>
+      <div class="dropdown-container">
+        <a href="#css-color">color</a>
+        <a href="#css-background-color">background-color</a>
+        <a href="#css-margin">margin</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <section id="html-a">
+        <h2>HTML Tag: &lt;a&gt;</h2>
+        <p>
+          The <code>&lt;a&gt;</code> tag defines a hyperlink, which is used to
+          link from one page to another.
+        </p>
+
+        <h3>Attributes:</h3>
+        <ul>
+          <li>
+            <strong>href:</strong> Specifies the URL of the page the link goes
+            to.
+          </li>
+          <li>
+            <strong>target:</strong> Specifies where to open the linked
+            document.
+          </li>
+        </ul>
+
+        <h3>Example:</h3>
+        <pre><code>&lt;a href="https://example.com" target="_blank"&gt;Visit Example&lt;/a&gt;</code></pre>
+
+        <h3>Usage Notes:</h3>
+        <p>
+          Use the <code>target="_blank"</code> attribute to open the link in a
+          new tab or window.
+        </p>
+      </section>
+
+      <section id="html-div">
+        <h2>HTML Tag: &lt;div&gt;</h2>
+        <p>
+          The <code>&lt;div&gt;</code> tag defines a division or section in an
+          HTML document.
+        </p>
+
+        <h3>Attributes:</h3>
+        <ul>
+          <li>
+            <strong>id:</strong> Specifies a unique id for the
+            <code>&lt;div&gt;</code>.
+          </li>
+          <li>
+            <strong>class:</strong> Specifies one or more class names for the
+            <code>&lt;div&gt;</code>.
+          </li>
+        </ul>
+
+        <h3>Example:</h3>
+        <pre><code>&lt;div id="main-content" class="container"&gt;Content here&lt;/div&gt;</code></pre>
+
+        <h3>Usage Notes:</h3>
+        <p>
+          The <code>&lt;div&gt;</code> tag is often used as a container for
+          other elements.
+        </p>
+      </section>
+
+      <section id="css-color">
+        <h2>CSS Property: color</h2>
+        <p>The <code>color</code> property sets the color of text.</p>
+
+        <h3>Values:</h3>
+        <ul>
+          <li><strong>color-name:</strong> E.g., red, blue.</li>
+          <li><strong>hex-code:</strong> E.g., #ff0000.</li>
+          <li><strong>rgb:</strong> E.g., rgb(255,0,0).</li>
+        </ul>
+
+        <h3>Inheritable:</h3>
+        <p>Yes, the <code>color</code> property is inheritable.</p>
+
+        <h3>Default Value:</h3>
+        <p>
+          Depends on the user agent, but typically black (<code>#000000</code>).
+        </p>
+
+        <h3>Applicable To:</h3>
+        <p>All elements.</p>
+
+        <h3>Example:</h3>
+        <pre><code>p { color: blue; }</code></pre>
+
+        <h3>Usage Notes:</h3>
+        <p>Use this property to set the color of your text.</p>
+      </section>
+
+      <section id="css-background-color">
+        <h2>CSS Property: background-color</h2>
+        <p>
+          The <code>background-color</code> property sets the background color
+          of an element.
+        </p>
+
+        <h3>Values:</h3>
+        <ul>
+          <li><strong>color-name:</strong> E.g., red, blue.</li>
+          <li><strong>hex-code:</strong> E.g., #ff0000.</li>
+          <li><strong>rgb:</strong> E.g., rgb(255,0,0).</li>
+          <li>
+            <strong>rgba:</strong> E.g., rgba(255,0,0,0.5) (with transparency).
+          </li>
+        </ul>
+
+        <h3>Inheritable:</h3>
+        <p>
+          No, the <code>background-color</code> property is not inheritable.
+        </p>
+
+        <h3>Default Value:</h3>
+        <p>Transparent.</p>
+
+        <h3>Applicable To:</h3>
+        <p>All elements.</p>
+
+        <h3>Example:</h3>
+        <pre><code>div { background-color: #ff0000; }</code></pre>
+
+        <h3>Usage Notes:</h3>
+        <p>Use this property to set the background color of your elements.</p>
+      </section>
+
+      <section id="css-margin">
+        <h2>CSS Property: margin</h2>
+        <p>
+          The <code>margin</code> property sets the outer space around an
+          element.
+        </p>
+
+        <h3>Values:</h3>
+        <ul>
+          <li><strong>length:</strong> E.g., 10px, 2em.</li>
+          <li><strong>percentage:</strong> E.g., 10%.</li>
+          <li><strong>auto:</strong> Automatically calculates the margin.</li>
+          <li>
+            <strong>inherit:</strong> Inherits the margin value from the parent
+            element.
+          </li>
+        </ul>
+
+        <h3>Inheritable:</h3>
+        <p>No, the <code>margin</code> property is not inheritable.</p>
+
+        <h3>Default Value:</h3>
+        <p><code>0</code> for all sides.</p>
+
+        <h3>Applicable To:</h3>
+        <p>All block-level elements and inline-block elements.</p>
+
+        <h3>Example:</h3>
+        <pre><code>div { margin: 10px; }</code></pre>
+
+        <h3>Usage Notes:</h3>
+        <p>
+          Use this property to create space around elements, outside of any
+          defined borders.
+        </p>
+      </section>
+    </div>
+
+    <script>
+      // Dropdown 
+      let dropdown = document.getElementsByClassName("dropdown-btn");
+
+      for (let i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let dropdownContent = this.nextElementSibling;
+
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
